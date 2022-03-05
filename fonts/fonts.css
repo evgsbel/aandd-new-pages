@@ -1,0 +1,89 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(./roboto/Roboto-Regular.woff2) format("woff2"), url(./roboto/Roboto-Regular.woff) format("woff"), url(./roboto/Roboto-Regular.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: Roboto-Black;
+  src: url(./roboto/Roboto-Black.woff2) format("woff2"), url(./roboto/Roboto-Black.woff) format("woff"), url(./roboto/Roboto-Black.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(./roboto/Roboto-Bold.woff2) format("woff2"), url(./roboto/Roboto-Bold.woff) format("woff"), url(./roboto/Roboto-Bold.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(./roboto/Roboto-Medium.woff2) format("woff2"), url(./roboto/Roboto-Medium.woff) format("woff"), url(./roboto/Roboto-Medium.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(./roboto/Roboto-Light.woff2) format("woff2"), url(./roboto/Roboto-Light.woff) format("woff"), url(./roboto/Roboto-Light.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: FuturaPT-Bold;
+  src: url(./futura/FuturaPT-Bold.woff2) format("woff2"), url(./futura/FuturaPT-Bold.woff) format("woff"), url(./futura/FuturaPT-Bold.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: FuturaPT-ExtraBold;
+  src: url(./futura/FuturaPT-ExtraBold.woff2) format("woff2"), url(./futura/FuturaPT-ExtraBold.woff) format("woff"), url(./futura/FuturaPT-ExtraBold.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: FuturaPT-Heavy;
+  src: url(./futura/FuturaPT-Heavy.woff2) format("woff2"), url(./futura/FuturaPT-Heavy.woff) format("woff"), url(./futura/FuturaPT-Heavy.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: FuturaPT-Light;
+  src: url(./futura/FuturaPT-Light.woff2) format("woff2"), url(./futura/FuturaPT-Light.woff) format("woff"), url(./futura/FuturaPT-Light.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: FuturaPT-Medium;
+  src: url(./futura/FuturaPT-Medium.woff2) format("woff2"), url(./futura/FuturaPT-Medium.woff) format("woff"), url(./futura/FuturaPT-Medium.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: FuturaPTCond-ExtraBold;
+  src: url(./futura/FuturaPTCond-ExtraBold.woff2) format("woff2"), url(./futura/FuturaPTCond-ExtraBold.woff) format("woff"), url(./futura/FuturaPTCond-ExtraBold.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: FuturaPTCond-Medium;
+  src: url(./futura/FuturaPTCond-Medium.woff2) format("woff2"), url(./futura/FuturaPTCond-Medium.woff) format("woff"), url(./futura/FuturaPTCond-Medium.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: FuturaPT-BookC;
+  src: url(./futura/FuturaPT-BookC.woff2) format("woff2"), url(./futura/FuturaPT-BookC.woff) format("woff"), url(./futura/FuturaPT-BookC.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: FuturaPT-DemiC;
+  src: url(./futura/FuturaPT-DemiC.woff2) format("woff2"), url(./futura/FuturaPT-DemiC.woff) format("woff"), url(./futura/FuturaPT-DemiC.ttf);
+  font-display: swap
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Italic;
+  src: url(./roboto/Roboto-Regular.woff2) format("woff2"), url(./roboto/Roboto-Regular.woff) format("woff"), url(./roboto/Roboto-Regular.ttf);
+  font-display: swap
+}
