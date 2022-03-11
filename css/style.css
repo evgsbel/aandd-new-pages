@@ -1100,7 +1100,7 @@ div.wpcf7 .ajax-loader {
 }
 
 .rules__content p {
-  margin-bottom: 30px;
+  line-height: 24px;
 }
 
 .rules__content ul {
@@ -1140,7 +1140,7 @@ div.wpcf7 .ajax-loader {
 }
 
 .rules__content li {
-  margin-bottom: 30px;
+  line-height: 24px;
 }
 
 .rules__content ol p {
