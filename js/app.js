@@ -1,5 +1,3 @@
-
-
 import {S as e, A as t, N as r, P as o} from "./vendor.d82aaa9c.js";
 
 !function () {
@@ -22,7 +20,7 @@ import {S as e, A as t, N as r, P as o} from "./vendor.d82aaa9c.js";
   }
 }();
 !function (s) {
-  const i = s.querySelector(".swiper");
+  const i = s.querySelector(".sertificate-swiper");
   new e(i, {
     modules: [t, r, o],
     grabCursor: !0,
@@ -37,7 +35,7 @@ import {S as e, A as t, N as r, P as o} from "./vendor.d82aaa9c.js";
       el: ".swiper-pagination-progress",
       clickable: !0,
       renderBullet: function (e, s) {
-        return  '<span class="' + s + '"><div class="pagination__progress-bar"><div class="progress progress-striped"><div class="progress-bar"></div></div></div></span>'
+        return '<span class="' + s + '"><div class="pagination__progress-bar"><div class="progress progress-striped"><div class="progress-bar"></div></div></div></span>'
       }
     },
     // autoplay: {delay: 3e3},
@@ -65,5 +63,43 @@ import {S as e, A as t, N as r, P as o} from "./vendor.d82aaa9c.js";
     }
   })
 }(document.querySelector(".carousel-slider"));
+
+
+
+$(() => {
+  const swiper2 = new Swiper(".leadership-content-slider", {
+    speed: 800,
+    slidesPerView: 1,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    navigation: {nextEl: ".leadership__slide-nav-btn_next", prevEl: ".leadership__slide-nav-btn_prev"},
+  });
+
+  const swiper = new Swiper(".leadership-slider", {
+    effect: "coverflow",
+    grabCursor: true,
+    spaceBetween: 60,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    navigation: {nextEl: ".leadership__slide-nav-btn_next", prevEl: ".leadership__slide-nav-btn_prev"},
+    thumbs: {
+      swiper: swiper2
+    },
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 150,
+      modifier: 1,
+      slideShadows: false,
+    },
+
+  });
+});
+
+
+
+
 
 

@@ -1227,16 +1227,38 @@ div.wpcf7 .ajax-loader {
 }
 
 /* certificate */
-.certificate {
+.certificate,
+.leadership {
   color: #fff;
   background-image: url('../img/sert-bg.png');
   min-height: 1000px;
   background-size: cover;
 }
 
-.certificate__slide {
-  border: 1px solid red;
+.leadership {
+  min-height: 1250px;
 }
+@media only screen and (max-width: 768px) {
+  .leadership {
+    min-height: 1460px;
+  }
+}
+
+
+.leadership__content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.leadership__caption {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
 
 
 /* carousel */
@@ -1284,6 +1306,10 @@ div.wpcf7 .ajax-loader {
   bottom: 0;
 }
 
+.swiper-slide a {
+  position: relative;
+}
+
 .carousel-slider .swiper-slide img {
   display: block;
   cursor: pointer;
@@ -1316,7 +1342,8 @@ div.wpcf7 .ajax-loader {
   -webkit-box-reflect: below 5px -webkit-linear-gradient(bottom, rgba(255, 0, 0, .1) 0%, transparent 32px, transparent 100%);
 }
 
-.certificate__slide-nav-btn {
+.certificate__slide-nav-btn,
+.leadership__slide-nav-btn {
   top: 90%;
   margin: 0;
   transform: translateY(-90%);
@@ -1326,11 +1353,18 @@ div.wpcf7 .ajax-loader {
   background-size: 13px 25px;
 }
 
-.certificate__slide-nav-btn_prev {
+.leadership__slide-nav-btn {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.certificate__slide-nav-btn_prev,
+.leadership__slide-nav-btn_prev {
   background-image: url("data:image/svg+xml,%3Csvg width='13' height='25' viewBox='0 0 13 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 1L1 13L12 24' stroke='%23232323'/%3E%3C/svg%3E%0A");
 }
 
-.certificate__slide-nav-btn_next {
+.certificate__slide-nav-btn_next,
+.leadership__slide-nav-btn_next {
   background-image: url("data:image/svg+xml,%3Csvg width='13' height='25' viewBox='0 0 13 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L12 13L1 24' stroke='%23232323'/%3E%3C/svg%3E%0A");
 }
 
@@ -1345,11 +1379,38 @@ div.wpcf7 .ajax-loader {
   background-image: url('../img/loup-icon.png');
   background-repeat: no-repeat;
   background-position: center;
+  transition: opacity .3s ease-in-out;
+}
+
+.leadership-slider .swiper-slide a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(77,169,210, 0.8);
+  border-radius: 10px;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.leadership-slider .swiper-slide-active.swiper-slide a::before {
+  opacity: 0;
+}
+
+.leadership-slider .slide-loup {
+  opacity: 0;
+}
+
+.leadership-slider .swiper-slide-active .slide-loup {
+  opacity: 1;
 }
 
 
 @media (max-width: 640px) {
-  .carousel-slider .swiper-button-next, .carousel-slider .swiper-button-prev, .certificate__slide-nav-btn {
+  .carousel-slider .swiper-button-next, .carousel-slider .swiper-button-prev, .certificate__slide-nav-btn, .leadership__slide-nav-btn {
     display: none !important
   }
 }
@@ -1503,4 +1564,21 @@ div.wpcf7 .ajax-loader {
 
 .fancybox-slide--html {
   padding: 0;
+}
+
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.back-link__arrow {
+  margin-right: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+.back-link:hover .back-link__arrow {
+  transform: translateX(-15px);
 }
